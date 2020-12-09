@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng chuyển đổi tiền tệ</title>
+    <link rel="stylesheet" href="chuyendoitien.css">
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            <h3 style="padding-left: 5em">Amount</h3>
+            <form >
+                <input id="amount" name="num" value="number" type="number">
+            </form>
+        </td>
+        <td>
+            <h3>From Currency</h3>
+            <form>
+                <select id="FromCurrency" name="monney">
+                    <option value="1">VietNam</option>
+                    <option value="23000">USD</option>
+                </select>
+            </form>
+        </td>
+        <td>
+            <h3>To Currency</h3>
+            <form>
+                <select id="ToCurrency" name="monney">
+                    <option value="23000">USD</option>
+                    <option value="1">VietNam</option>
+                </select>
+            </form>
+        </td>
+        <td>
+            <br/>
+            <input type="button" value="convert" style="height: 25px;width: 120px;background-color: blueviolet;"  onclick="convert()">
+        </td>
+    </tr>
+
+</table>
+<p id="result" style="float: bottom; color: Result:"></p>
+<script src="chuyendoitien.js"></script>
+</body>
+</html>
