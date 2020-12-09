@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập điểm</title>
+</head>
+<body>
+<p>Nhập điểm của sinh viên</p>
+<script>
+    let inputPhysical;
+    let inputChemistry;
+    let inputBiology;
+    inputPhysical = prompt('physicalScore');
+    inputChemistry = prompt('chemistryScore');
+    inputBiology = prompt('biologyScore');
+    physical = parseInt(inputPhysical);
+    chemistry = parseInt(inputChemistry);
+    biology = parseInt(inputBiology);
+    let average = (physical + chemistry + biology)/3;
+    let total = physical + chemistry + biology;
+    document.write('physical: ' + physical);
+    document.write('<br/>');
+    document.write('chemistry: ' + chemistry);
+    document.write('<br/>');
+    document.write('biology: ' + biology);
+    document.write('<br/>');
+    document.write('average = ' + average);
+    document.write('<br/>');
+    document.write('total = ' + total);
+</script>
+</body>
+</html>
